@@ -27,7 +27,7 @@ jobs:
       with:
         node-version : 12
     - name: Install Surge
-      run: npm install -g -surge
+      run: npm install -g surge
         
     - name: Run Surge
       run: surge ./ bootcamnewapp28.surge.sh --token ${{secrets.SURGE_TOKEN}}
